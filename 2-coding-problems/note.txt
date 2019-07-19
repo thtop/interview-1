@@ -1,0 +1,22 @@
+## How to solve problems
+1. Analytic Skills
+2. Coding Skills
+3. Technical Skills
+4. Communication Skills
+
+## Data Structures
+- Arrays
+- Stacks 
+- Queues
+- Linked Lists 
+- Trees
+- Tries
+- Graphs
+- Hash Tables 
+
+## Algorithims
+- Sorting 
+- Dynamic Programming
+- BFS + DFS (Searching) 
+- Recursion
+
