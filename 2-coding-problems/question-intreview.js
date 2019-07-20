@@ -17,27 +17,27 @@
  * // O(n^2)
 */
 
-// const array1 = ['a', 'b', 'c', 'x'];
-// const array2 = ['z', 'y', 'x'];
+/** Version 1 */
+const array1 = ['a', 'b', 'c', 'x'];
+const array2 = ['z', 'y', 'x'];
 
-// Version 1
-// function containsCommonItem(arr1, arr2) {
-//     for (let i = 0; i < arr1.length; i++) {
-//         for (let j = 0; j < arr2.length; j++) {
-//             if(arr1[i] === arr2[j]) {
-//                 return true;
-//             }
-//         }
-//     }
+function containsCommonItem(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if(arr1[i] === arr2[j]) {
+                return true;
+            }
+        }
+    }
    
-//     return false;
-// }
-// console.log(containsCommonItem(array1, array2)); 
+    return false;
+}
+console.log(containsCommonItem(array1, array2)); 
 // O(a * b) or O(n^2)
 // O(1) - Space Complexity
 
-const array1 = ['a', 'b', 'c', 'x'];
-const array2 = ['z', 'y', 'w'];
+
+/** Version 2 */
 
 /** 
  * array1 ==> obj {
@@ -50,7 +50,9 @@ const array2 = ['z', 'y', 'w'];
  * array2[index] === obj.propreties
 */
 
-// Version 2
+const array1 = ['a', 'b', 'c', 'x'];
+const array2 = ['z', 'y', 'w'];
+
 function containsCommonItem2(arr1, arr2) {
     // loop through first array and create object 
     // where properties === items in the array
@@ -74,13 +76,15 @@ function containsCommonItem2(arr1, arr2) {
             return true;
         }
     }
+
     return false;
 }
 console.log(containsCommonItem2(array1, array2));
 // O(a + b) Time Complexity
 // O(a) - Space Complexity
 
-// Version 3
+
+/** Version 3 */
 function containsCommonItem3(arr1, arr2) {
     return arr1.some(item => arr2.includes(item));
 }
