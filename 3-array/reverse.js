@@ -1,7 +1,7 @@
 /**
  * Create a function that reverses a string:
- *    'Hi! my name is Thamonwan' should be;
- *    'nawnomahT si eman ym !iH'
+ *    Input: 'Hi! My name is Thamonwan'
+ *    Output: 'nawnomahT si eman yM !iH'
 */
 
 /** Coding Version 1 */
@@ -19,27 +19,27 @@ function reverse(str) {
 
     return backwards.join('');
 }
-console.log('VERSION 1: ', reverse('Hi! my name is Thamonwan'));
+console.log('VERSION 1: ', reverse('Hi! My name is Thamonwan'));
 
 /** 
  * Coding Version 2 
- * (build in methods)
+ * (Build in methods)
 */
 function reverse2(str) {
     return str.split('').reverse().join('');
 }
-console.log('VERSION 2: ', reverse2('Hi! my name is Thamonwan'));
+console.log('VERSION 2: ', reverse2('Hi! My name is Thamonwan'));
 
 /** 
  * Coding Version 3 
  * (ES6)
 */
 const reverse3 = str => str.split('').reverse().join('');
-console.log('VERSION 3: ', reverse3('Hi! my name is Thamonwan'));
+console.log('VERSION 3: ', reverse3('Hi! My name is Thamonwan'));
 
 /** 
  * Coding Version 4 
  * (Spread operator)
  **/
 const reverse4 = str => [...str].reverse().join('');
-console.log('VERSION 4: ', reverse4('Hi! my name is Thamonwan'));
+console.log('VERSION 4: ', reverse4('Hi! My name is Thamonwan'));
